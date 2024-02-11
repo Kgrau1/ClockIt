@@ -1,5 +1,9 @@
 As an administrator, I want to be able to add and manage employee profiles within the app.
 As an employee, I want to be able to easily clock in and out using the app.
+As an employee, I want confirmation when I’m clocked in/out.
+As an employee, I want to be able to view my previous clocking times.
 As a manager, I want to have access to real-time attendance data and reports.
 As an HR representative, I want the app to integrate with existing payroll systems for seamless processing.
+As a payroll administrator, I want to be able to generate comprehensive reports on employee attendance and hours worked
 As a business owner, I want customizable settings and permissions for different user roles.
+As a business owner, I want the ability to set up notifications and alerts for late or missed clock-ins
