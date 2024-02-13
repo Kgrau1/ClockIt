@@ -142,4 +142,15 @@ public class Attendance {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "Attendance{" +
+                "id=" + id +
+                ", clockInTime=" + clockInTime +
+                ", clockOutTime=" + clockOutTime +
+                ", date=" + date +
+                ", clokedStatus=" + clokedStatus +
+                '}';
+    }
 }
