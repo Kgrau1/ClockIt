@@ -12,7 +12,7 @@ import javax.persistence.*;
 /**
  * The type Notification.
  */
-@Entity(name="Notification")
+@Entity
 @Table(name="notifications")
 public class Notification {
 

@@ -12,7 +12,7 @@ import javax.persistence.*;
 /**
  * The type Attendance.
  */
-@Entity(name="Attendance")
+@Entity
 @Table(name="attendance")
 public class Attendance {
 

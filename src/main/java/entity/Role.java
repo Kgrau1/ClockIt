@@ -11,7 +11,7 @@ import javax.persistence.*;
 /**
  * The type Role.
  */
-@Entity(name="Role")
+@Entity
 @Table(name="roles")
 public class Role {
 

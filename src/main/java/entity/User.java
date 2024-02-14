@@ -11,7 +11,7 @@ import javax.persistence.*;
 /**
  * The type User.
  */
-@Entity(name="User")
+@Entity
 @Table(name="users")
 public class User {
 
