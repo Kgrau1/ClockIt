@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+
+import javax.persistence.EntityNotFoundException;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -47,7 +49,11 @@ public class GenericDao<T> {
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
+        logger.info("Generic Dao entity: " + entity);
         session.close();
+        if (entity == null) {
+            throw new EntityNotFoundException("Entity with id " + id + " not found.");
+        }
         return entity;
     }
 

@@ -16,11 +16,16 @@ import javax.persistence.*;
 public class User {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
     @Column(name = "username")
     private String username;
     @Column(name = "password_hash")
     private String passwordHash;
+    @ManyToOne
+    @JoinColumn(name = "attendance_id")
+    private Attendance attendance;
 
 
     /**
@@ -32,12 +37,10 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param id           the id
      * @param username     the username
      * @param passwordHash the password hash
      */
-    public User(int id, String username, String passwordHash) {
-        this.id = id;
+    public User(String username, String passwordHash) {
         this.username = username;
         this.passwordHash = passwordHash;
     }

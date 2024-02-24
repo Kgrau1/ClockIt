@@ -1,14 +1,15 @@
-package persistence;
+package testUtils;
+
+import persistence.PropertiesLoader;
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
+
 /**
  * Provides access to the database
  * Created on 8/31/16.

@@ -20,6 +20,9 @@ public class Attendance {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
     @Column(name = "clock_in_time")
     private LocalDateTime clockInTime;
     @Column(name = "clock_out_time")
