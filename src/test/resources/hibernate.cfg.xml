@@ -22,9 +22,8 @@
 
 
         <mapping class="entity.User" />
-        <mapping class="entity.Role"/>
         <mapping class="entity.Attendance"/>
-        <mapping class="entity.Notification"/>
+
     </session-factory>
 
 </hibernate-configuration>
