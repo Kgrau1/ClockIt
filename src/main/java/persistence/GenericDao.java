@@ -51,9 +51,6 @@ public class GenericDao<T> {
         T entity = (T)session.get(type, id);
         logger.info("Generic Dao entity: " + entity);
         session.close();
-        if (entity == null) {
-            throw new EntityNotFoundException("Entity with id " + id + " not found.");
-        }
         return entity;
     }
 

@@ -1,6 +1,8 @@
 package persistence;
 
+import entity.Attendance;
 import entity.User;
+import javassist.NotFoundException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,22 +13,28 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import testUtils.Database;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.OptimisticLockException;
 
 
 /**
- * The type User dao test.
+ * The type Attendance dao test.
  */
-class UserDaoTest {
+class AttendanceDaoTest {
 
     /**
      * The Dao.
      */
-    GenericDao<User> dao;
-    private static final Logger logger = LogManager.getLogger(UserDaoTest.class);
+    GenericDao<Attendance> dao;
+    private static final Logger logger = LogManager.getLogger(AttendanceDaoTest.class);
     private static SessionFactory sessionFactory;
+    private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
 
     /**
      * Sets up.
@@ -35,7 +43,7 @@ class UserDaoTest {
     void setUp() {
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
-        dao = new GenericDao<>(User.class);
+        dao = new GenericDao<>(Attendance.class);
         Configuration configuration = new Configuration().configure();
         sessionFactory = configuration.buildSessionFactory();
     }
@@ -65,10 +73,9 @@ class UserDaoTest {
      */
     @Test
     void testGetByIdSuccess() {
-        User retrievedUser = (User) dao.getById(1);
-        logger.info("Retrieved user: " + retrievedUser);
-        assertNotNull(retrievedUser);
-        assertEquals("Kevg", retrievedUser.getUsername());
+        Attendance retrievedHours = (Attendance) dao.getById(1);
+        assertNotNull(retrievedHours);
+        assertEquals(LocalDateTime.parse("2024-02-17 09:00:00", DATE_TIME_FORMATTER), retrievedHours.getClockInTime());
     }
 
     /**
@@ -76,13 +83,13 @@ class UserDaoTest {
      */
     @Test
     void testSaveOrUpdateSuccess() {
-        User userToUpdate = dao.getById(3);
-        userToUpdate.setUsername("Herbert");
-        dao.saveOrUpdate(userToUpdate);
+        Attendance hoursToUpdate = dao.getById(3);
+        hoursToUpdate.setClockOutTime(LocalDateTime.parse("2024-02-17 11:00:00", DATE_TIME_FORMATTER));
+        dao.saveOrUpdate(hoursToUpdate);
 
-        User updatedUser = dao.getById(3);
-        assertNotNull(updatedUser);
-        assertEquals("Herbert", updatedUser.getUsername());
+        Attendance updatedHours = dao.getById(3);
+        assertNotNull(updatedHours);
+        assertEquals(LocalDateTime.parse("2024-02-17 11:00:00", DATE_TIME_FORMATTER), updatedHours.getClockOutTime());
     }
 
     /**
@@ -90,16 +97,17 @@ class UserDaoTest {
      */
     @Test
     void testInsertSuccess() {
-        User newUser = new User();
-        newUser.setUsername("JohnDoe");
-        newUser.setPasswordHash("5556656");
+        Attendance newHours = new Attendance();
+        newHours.setClockInTime(LocalDateTime.parse("2024-02-18 08:00:00", DATE_TIME_FORMATTER));
+        newHours.setClockOutTime(LocalDateTime.parse("2024-02-18 16:00:00", DATE_TIME_FORMATTER));
 
-        int id = dao.insert(newUser);
+        int id = dao.insert(newHours);
         assertNotEquals(0, id);
 
-        User insertedUser = (User) dao.getById(Integer.parseInt(String.valueOf(id)));
-        assertNotNull(insertedUser);
-        assertEquals("JohnDoe", insertedUser.getUsername());
+        Attendance insertedHours = (Attendance) dao.getById(Integer.parseInt(String.valueOf(id)));
+        assertNotNull(insertedHours);
+        assertEquals(LocalDateTime.parse("2024-02-18 08:00:00", DATE_TIME_FORMATTER), insertedHours.getClockInTime());
+        assertEquals(LocalDateTime.parse("2024-02-18 16:00:00", DATE_TIME_FORMATTER), insertedHours.getClockOutTime());
     }
 
     /**
@@ -116,8 +124,8 @@ class UserDaoTest {
      */
     @Test
     void testGetAllSuccess() {
-        List<User> users = dao.getAll();
-        assertEquals(3, users.size());
+        List<Attendance> attendance = dao.getAll();
+        assertEquals(3, attendance.size());
     }
 
     /**
@@ -125,10 +133,10 @@ class UserDaoTest {
      */
     @Test
     void testUpdateFailure() {
-        User nonExistingRecord = new User();
+        Attendance nonExistingRecord = new Attendance();
         nonExistingRecord.setId(9999);
-        nonExistingRecord.setUsername("JohnDoe");
-        nonExistingRecord.setPasswordHash("123456");
+        nonExistingRecord.setClockInTime(LocalDateTime.parse("2024-02-18 08:00:00", DATE_TIME_FORMATTER));
+        nonExistingRecord.setClockOutTime(LocalDateTime.parse("2024-02-18 16:00:00", DATE_TIME_FORMATTER));
 
         assertThrows(OptimisticLockException.class, () -> dao.saveOrUpdate(nonExistingRecord));
     }
@@ -138,7 +146,7 @@ class UserDaoTest {
      */
     @Test
     void testDeleteFailure() {
-        User nonExistingRecord = new User();
+        Attendance nonExistingRecord = new Attendance();
         nonExistingRecord.setId(9999);
 
         assertThrows(OptimisticLockException.class, () -> dao.delete(nonExistingRecord));
@@ -149,7 +157,7 @@ class UserDaoTest {
      */
     @Test
     void testGetByNonExistentId() {
-        User nonExistingRecord = dao.getById(9999);
+        Attendance nonExistingRecord = dao.getById(9999);
         assertNull(nonExistingRecord);
     }
 }

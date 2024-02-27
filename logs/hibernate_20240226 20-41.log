@@ -1,0 +1,995 @@
+[DEBUG] 2024-02-26 20-41-15.205 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2024-02-26 20-41-15.210 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2024-02-26 20-41-15.213 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2024-02-26 20-41-15.308 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2024-02-26 20-41-15.310 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2024-02-26 20-41-15.442 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2024-02-26 20-41-15.445 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2024-02-26 20-41-15.451 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2024-02-26 20-41-15.633 [main] Configuration - Building session factory using internal StandardServiceRegistryBuilder
+[DEBUG] 2024-02-26 20-41-15.637 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2024-02-26 20-41-15.638 [main] Configuration - Building session factory using provided StandardServiceRegistry
+[DEBUG] 2024-02-26 20-41-15.648 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2024-02-26 20-41-15.649 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2024-02-26 20-41-15.662 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2024-02-26 20-41-15.682 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-15.683 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-15.683 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-15.684 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@cf518cf
+[DEBUG] 2024-02-26 20-41-15.686 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1e43e323
+[DEBUG] 2024-02-26 20-41-15.687 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@eca6a74
+[DEBUG] 2024-02-26 20-41-15.688 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-15.688 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-15.688 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-15.689 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-15.691 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-15.691 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-15.692 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-15.692 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-15.692 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-15.693 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-15.693 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-15.694 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-15.695 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-15.695 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-15.695 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-15.696 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-15.696 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-15.702 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-15.703 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-15.704 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-15.705 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-15.706 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4068102e
+[DEBUG] 2024-02-26 20-41-15.706 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4068102e
+[DEBUG] 2024-02-26 20-41-15.707 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@36417a54
+[DEBUG] 2024-02-26 20-41-15.707 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@36417a54
+[DEBUG] 2024-02-26 20-41-15.708 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@60cf62ad
+[DEBUG] 2024-02-26 20-41-15.708 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@60cf62ad
+[DEBUG] 2024-02-26 20-41-15.709 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@14982a82
+[DEBUG] 2024-02-26 20-41-15.709 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6726cc69
+[DEBUG] 2024-02-26 20-41-15.711 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@5292ceca
+[DEBUG] 2024-02-26 20-41-15.711 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5292ceca
+[DEBUG] 2024-02-26 20-41-15.712 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@673919a7
+[DEBUG] 2024-02-26 20-41-15.713 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@673919a7
+[DEBUG] 2024-02-26 20-41-15.734 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@1f7076bc
+[DEBUG] 2024-02-26 20-41-15.734 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1f7076bc
+[DEBUG] 2024-02-26 20-41-15.736 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b3a7ef5
+[DEBUG] 2024-02-26 20-41-15.736 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b3a7ef5
+[DEBUG] 2024-02-26 20-41-15.737 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5d21202d
+[DEBUG] 2024-02-26 20-41-15.737 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5d21202d
+[DEBUG] 2024-02-26 20-41-15.738 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@65bdd558
+[DEBUG] 2024-02-26 20-41-15.738 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@65bdd558
+[DEBUG] 2024-02-26 20-41-15.739 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2af69643
+[DEBUG] 2024-02-26 20-41-15.739 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2af69643
+[DEBUG] 2024-02-26 20-41-15.740 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@22587507
+[DEBUG] 2024-02-26 20-41-15.740 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@22587507
+[DEBUG] 2024-02-26 20-41-15.741 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@508a65bf
+[DEBUG] 2024-02-26 20-41-15.741 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@508a65bf
+[DEBUG] 2024-02-26 20-41-15.742 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@66273da0
+[DEBUG] 2024-02-26 20-41-15.743 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@66273da0
+[DEBUG] 2024-02-26 20-41-15.744 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@60f70249
+[DEBUG] 2024-02-26 20-41-15.744 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@60f70249
+[DEBUG] 2024-02-26 20-41-15.745 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-15.745 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-15.745 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-15.747 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7ff35a3f
+[DEBUG] 2024-02-26 20-41-15.748 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-15.748 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-15.748 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-15.749 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@9596ce8
+[DEBUG] 2024-02-26 20-41-15.749 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@2849434b
+[DEBUG] 2024-02-26 20-41-15.749 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2849434b
+[DEBUG] 2024-02-26 20-41-15.751 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@43e9089
+[DEBUG] 2024-02-26 20-41-15.751 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@43e9089
+[DEBUG] 2024-02-26 20-41-15.752 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@122d6c22
+[DEBUG] 2024-02-26 20-41-15.752 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@122d6c22
+[DEBUG] 2024-02-26 20-41-15.753 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4c6007fb
+[DEBUG] 2024-02-26 20-41-15.753 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4c6007fb
+[DEBUG] 2024-02-26 20-41-15.753 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@646c0a67
+[DEBUG] 2024-02-26 20-41-15.753 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@646c0a67
+[DEBUG] 2024-02-26 20-41-15.755 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5bc28f40
+[DEBUG] 2024-02-26 20-41-15.756 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-15.756 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-15.756 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-15.763 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-15.763 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-15.763 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-15.764 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@620c8641
+[DEBUG] 2024-02-26 20-41-15.764 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@c27a3a2
+[DEBUG] 2024-02-26 20-41-15.765 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-15.765 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-15.765 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-15.766 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-15.766 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-15.766 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-15.766 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7fdab70c
+[DEBUG] 2024-02-26 20-41-15.773 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@455c1d8c
+[DEBUG] 2024-02-26 20-41-15.775 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@52d97ab6
+[DEBUG] 2024-02-26 20-41-15.775 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@52d97ab6
+[DEBUG] 2024-02-26 20-41-15.776 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2924f1d8
+[DEBUG] 2024-02-26 20-41-15.777 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@7cbeac65
+[DEBUG] 2024-02-26 20-41-15.777 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7cbeac65
+[DEBUG] 2024-02-26 20-41-15.779 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5af8bb51
+[DEBUG] 2024-02-26 20-41-15.779 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5af8bb51
+[DEBUG] 2024-02-26 20-41-15.779 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4b65d9f4
+[DEBUG] 2024-02-26 20-41-15.780 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@28da7d11
+[DEBUG] 2024-02-26 20-41-15.781 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@121bb45b
+[DEBUG] 2024-02-26 20-41-15.784 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@296e281a
+[DEBUG] 2024-02-26 20-41-15.784 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@296e281a
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4a163575
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7e642b88
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@6b350309
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7ecec90d
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@588f63c
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5a6fa56e
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1981d861
+[DEBUG] 2024-02-26 20-41-15.785 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@118ffcfd
+[DEBUG] 2024-02-26 20-41-15.811 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2024-02-26 20-41-15.812 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2024-02-26 20-41-15.813 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-02-26 20-41-15.813 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-02-26 20-41-15.814 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2024-02-26 20-41-15.817 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2024-02-26 20-41-15.817 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2024-02-26 20-41-15.818 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-02-26 20-41-15.819 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2024-02-26 20-41-15.819 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2024-02-26 20-41-15.819 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2024-02-26 20-41-15.820 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2024-02-26 20-41-15.820 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-02-26 20-41-15.820 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[WARN ] 2024-02-26 20-41-15.824 [main] ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+[WARN ] 2024-02-26 20-41-15.826 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2024-02-26 20-41-15.826 [main] pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/clockit]
+[INFO ] 2024-02-26 20-41-15.827 [main] pooling - HHH10001001: Connection properties: {password=RootPass., user=root}
+[INFO ] 2024-02-26 20-41-15.827 [main] pooling - HHH10001003: Autocommit mode: false
+[DEBUG] 2024-02-26 20-41-15.829 [main] DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+[INFO ] 2024-02-26 20-41-15.829 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[DEBUG] 2024-02-26 20-41-15.873 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.3.0
+      major : 8
+      minor : 3
+[DEBUG] 2024-02-26 20-41-15.873 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2024-02-26 20-41-15.873 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2024-02-26 20-41-15.885 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[DEBUG] 2024-02-26 20-41-15.899 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2024-02-26 20-41-15.931 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2024-02-26 20-41-15.972 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2024-02-26 20-41-15.975 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@f324455] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3a894088]
+[DEBUG] 2024-02-26 20-41-16.010 [main] AnnotationBinder - Binding entity from annotated class: entity.User
+[DEBUG] 2024-02-26 20-41-16.026 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2024-02-26 20-41-16.031 [main] EntityBinder - Import with entity name User
+[DEBUG] 2024-02-26 20-41-16.033 [main] EntityBinder - Bind entity entity.User on table users
+[DEBUG] 2024-02-26 20-41-16.054 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.056 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2024-02-26 20-41-16.057 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:id]
+[DEBUG] 2024-02-26 20-41-16.059 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.060 [main] PropertyBinder - Building property id
+[DEBUG] 2024-02-26 20-41-16.063 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(user_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-02-26 20-41-16.065 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.066 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=attendance, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.067 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.074 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.074 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=attendance_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.074 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='attendance_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2024-02-26 20-41-16.075 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.076 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.076 [main] CollectionBinder - Collection role: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.077 [main] PropertyBinder - Building property attendance
+[DEBUG] 2024-02-26 20-41-16.078 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password_hash, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.078 [main] PropertyBinder - MetadataSourceProcessor property passwordHash with lazy=false
+[DEBUG] 2024-02-26 20-41-16.078 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:passwordHash]
+[DEBUG] 2024-02-26 20-41-16.078 [main] SimpleValueBinder - building SimpleValue for passwordHash
+[DEBUG] 2024-02-26 20-41-16.078 [main] PropertyBinder - Building property passwordHash
+[DEBUG] 2024-02-26 20-41-16.078 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.078 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2024-02-26 20-41-16.078 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:username]
+[DEBUG] 2024-02-26 20-41-16.078 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2024-02-26 20-41-16.078 [main] PropertyBinder - Building property username
+[DEBUG] 2024-02-26 20-41-16.079 [main] AnnotationBinder - Binding entity from annotated class: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.079 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2024-02-26 20-41-16.080 [main] EntityBinder - Import with entity name Attendance
+[DEBUG] 2024-02-26 20-41-16.080 [main] EntityBinder - Bind entity entity.Attendance on table attendance
+[DEBUG] 2024-02-26 20-41-16.083 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=attendance_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.083 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2024-02-26 20-41-16.083 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:id]
+[DEBUG] 2024-02-26 20-41-16.083 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.083 [main] PropertyBinder - Building property id
+[DEBUG] 2024-02-26 20-41-16.083 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(attendance_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-02-26 20-41-16.083 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=clock_in_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.083 [main] PropertyBinder - MetadataSourceProcessor property clockInTime with lazy=false
+[DEBUG] 2024-02-26 20-41-16.083 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clockInTime]
+[DEBUG] 2024-02-26 20-41-16.083 [main] SimpleValueBinder - building SimpleValue for clockInTime
+[DEBUG] 2024-02-26 20-41-16.083 [main] PropertyBinder - Building property clockInTime
+[DEBUG] 2024-02-26 20-41-16.084 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=clock_out_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.084 [main] PropertyBinder - MetadataSourceProcessor property clockOutTime with lazy=false
+[DEBUG] 2024-02-26 20-41-16.084 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clockOutTime]
+[DEBUG] 2024-02-26 20-41-16.085 [main] SimpleValueBinder - building SimpleValue for clockOutTime
+[DEBUG] 2024-02-26 20-41-16.085 [main] PropertyBinder - Building property clockOutTime
+[DEBUG] 2024-02-26 20-41-16.085 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=status, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.086 [main] PropertyBinder - MetadataSourceProcessor property clokedStatus with lazy=false
+[DEBUG] 2024-02-26 20-41-16.086 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clokedStatus]
+[DEBUG] 2024-02-26 20-41-16.086 [main] SimpleValueBinder - building SimpleValue for clokedStatus
+[DEBUG] 2024-02-26 20-41-16.086 [main] PropertyBinder - Building property clokedStatus
+[DEBUG] 2024-02-26 20-41-16.086 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.086 [main] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2024-02-26 20-41-16.086 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:date]
+[DEBUG] 2024-02-26 20-41-16.086 [main] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2024-02-26 20-41-16.086 [main] PropertyBinder - Building property date
+[DEBUG] 2024-02-26 20-41-16.087 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2024-02-26 20-41-16.087 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.088 [main] PropertyBinder - Building property user
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for passwordHash
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for clockInTime
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for clockOutTime
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for clokedStatus
+[DEBUG] 2024-02-26 20-41-16.089 [main] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2024-02-26 20-41-16.092 [main] PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2024-02-26 20-41-16.092 [main] PrimaryKey - Forcing column [attendance_id] to be non-null as it is part of the primary key for table [attendance]
+[DEBUG] 2024-02-26 20-41-16.092 [main] CollectionSecondPass - Second pass for collection: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.092 [main] CollectionBinder - Binding a OneToMany: entity.User.attendance through a foreign key
+[DEBUG] 2024-02-26 20-41-16.093 [main] CollectionBinder - Mapping collection: entity.User.attendance -> attendance
+[DEBUG] 2024-02-26 20-41-16.093 [main] TableBinder - Retrieving property entity.Attendance.user
+[DEBUG] 2024-02-26 20-41-16.093 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.093 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.User
+[DEBUG] 2024-02-26 20-41-16.096 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.User
+[DEBUG] 2024-02-26 20-41-16.115 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2024-02-26 20-41-16.115 [main] Settings - SessionFactory name : null
+[DEBUG] 2024-02-26 20-41-16.115 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2024-02-26 20-41-16.115 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2024-02-26 20-41-16.115 [main] Settings - Statistics: disabled
+[DEBUG] 2024-02-26 20-41-16.115 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2024-02-26 20-41-16.116 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2024-02-26 20-41-16.116 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2024-02-26 20-41-16.116 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Default null ordering: NONE
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2024-02-26 20-41-16.117 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2024-02-26 20-41-16.118 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2024-02-26 20-41-16.118 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2024-02-26 20-41-16.118 [main] Settings - Query language substitutions: {}
+[DEBUG] 2024-02-26 20-41-16.118 [main] Settings - Named query checking : enabled
+[DEBUG] 2024-02-26 20-41-16.118 [main] Settings - Second-level cache: disabled
+[DEBUG] 2024-02-26 20-41-16.119 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JDBC batch size: 15
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JPA compliance - query : 
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2024-02-26 20-41-16.120 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2024-02-26 20-41-16.154 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2024-02-26 20-41-16.170 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2024-02-26 20-41-16.170 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\plugins\junit\lib\junit-rt.jar;C:\IdeaProjects\ClockIt\target\test-classes;C:\IdeaProjects\ClockIt\target\classes;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\cheve\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\cheve\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\cheve\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\cheve\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cheve\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\cheve\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\cheve\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\cheve\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\cheve\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\cheve\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\cheve\.m2\repository\org\hibernate\hibernate-core\5.4.4.Final\hibernate-core-5.4.4.Final.jar;C:\Users\cheve\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\cheve\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\cheve\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\cheve\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\cheve\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\cheve\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\cheve\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\cheve\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\cheve\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\cheve\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\cheve\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\cheve\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\cheve\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\cheve\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\cheve\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\cheve\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\cheve\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=America/Chicago, os.name=Windows 11, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.22+7\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 persistence.UserDaoTest,testGetByNonExistentId, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\cheve, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-01-16, java.home=C:\Program Files\Java\jdk-11.0.22+7, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.22+7, user.name=cheve, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/clockit, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Temurin-11.0.22+7, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\cheve\AppData\Local\Temp\, java.version=11.0.22, user.dir=C:\IdeaProjects\ClockIt, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5438c17a, java.library.path=C:\Program Files\Java\jdk-11.0.22+7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\cheve\AppData\Local\Microsoft\WindowsApps;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, java.vm.version=11.0.22+7, java.specification.maintenance.version=2, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/clockit, java.class.version=55.0}
+[DEBUG] 2024-02-26 20-41-16.182 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2024-02-26 20-41-16.182 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2024-02-26 20-41-16.183 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2024-02-26 20-41-16.183 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@f324455] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@40ef0af8]
+[DEBUG] 2024-02-26 20-41-16.213 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2024-02-26 20-41-16.213 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2024-02-26 20-41-16.230 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2024-02-26 20-41-16.230 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2024-02-26 20-41-16.395 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Attendance] is safe
+[DEBUG] 2024-02-26 20-41-16.395 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.395 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Attendance] is safe
+[DEBUG] 2024-02-26 20-41-16.395 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.424 [main] AbstractCollectionPersister - Static SQL for collection: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.424 [main] AbstractCollectionPersister -  Row insert: update attendance set user_id=? where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.424 [main] AbstractCollectionPersister -  Row update: update attendance set  where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.424 [main] AbstractCollectionPersister -  Row delete: update attendance set user_id=null where user_id=? and attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.424 [main] AbstractCollectionPersister -  One-shot delete: update attendance set user_id=null where user_id=?
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister - Static SQL for entity: entity.User
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Version select: select user_id from users where user_id =?
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.password_hash as password2_1_, user_.username as username3_1_ from users user_ where user_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Insert 0: insert into users (password_hash, username, user_id) values (?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Update 0: update users set password_hash=?, username=? where user_id=?
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Delete 0: delete from users where user_id=?
+[DEBUG] 2024-02-26 20-41-16.427 [main] AbstractEntityPersister -  Identity insert: insert into users (password_hash, username) values (?, ?)
+[DEBUG] 2024-02-26 20-41-16.445 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@508ad266]
+[DEBUG] 2024-02-26 20-41-16.446 [main] MetamodelGraphWalker - Visiting attribute path : attendance
+[DEBUG] 2024-02-26 20-41-16.449 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2c9306d3]
+[DEBUG] 2024-02-26 20-41-16.450 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b9088f2]
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockInTime
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockOutTime
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clokedStatus
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Visiting attribute path : attendance.date
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Visiting attribute path : attendance.user
+[DEBUG] 2024-02-26 20-41-16.451 [main] MetamodelGraphWalker - Property path deemed to be circular : attendance.user
+[DEBUG] 2024-02-26 20-41-16.452 [main] MetamodelGraphWalker - Visiting attribute path : passwordHash
+[DEBUG] 2024-02-26 20-41-16.452 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2024-02-26 20-41-16.452 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.460 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.465 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+          - CollectionAttributeFetchImpl(collection=entity.User.attendance, querySpaceUid=<gen:1>, path=entity.User.attendance)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:2>, path=entity.User.attendance.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(attendance)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.User.attendance)
+                - SQL table alias mapping - attendance1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - attendan1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Attendance)
+                      - SQL table alias mapping - attendance1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {attendan1_0_2_}
+
+[DEBUG] 2024-02-26 20-41-16.466 [main] EntityLoader - Static select for entity entity.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.password_hash as password2_1_0_, user0_.username as username3_1_0_, attendance1_.user_id as user_id6_0_1_, attendance1_.attendance_id as attendan1_0_1_, attendance1_.attendance_id as attendan1_0_2_, attendance1_.clock_in_time as clock_in2_0_2_, attendance1_.clock_out_time as clock_ou3_0_2_, attendance1_.status as status4_0_2_, attendance1_.date as date5_0_2_, attendance1_.user_id as user_id6_0_2_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.467 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28b523a]
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance
+[DEBUG] 2024-02-26 20-41-16.467 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@63d677f5]
+[DEBUG] 2024-02-26 20-41-16.467 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71d55b7e]
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockInTime
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockOutTime
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clokedStatus
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance.date
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : attendance.user
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Property path deemed to be circular : attendance.user
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : passwordHash
+[DEBUG] 2024-02-26 20-41-16.467 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2024-02-26 20-41-16.467 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.467 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.467 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+          - CollectionAttributeFetchImpl(collection=entity.User.attendance, querySpaceUid=<gen:1>, path=entity.User.attendance)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:2>, path=entity.User.attendance.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(attendance)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.User.attendance)
+                - SQL table alias mapping - attendance1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - attendan1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Attendance)
+                      - SQL table alias mapping - attendance1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {attendan1_0_2_}
+
+[DEBUG] 2024-02-26 20-41-16.468 [main] EntityLoader - Static select for entity entity.User [READ]: select user0_.user_id as user_id1_1_0_, user0_.password_hash as password2_1_0_, user0_.username as username3_1_0_, attendance1_.user_id as user_id6_0_1_, attendance1_.attendance_id as attendan1_0_1_, attendance1_.attendance_id as attendan1_0_2_, attendance1_.clock_in_time as clock_in2_0_2_, attendance1_.clock_out_time as clock_ou3_0_2_, attendance1_.status as status4_0_2_, attendance1_.date as date5_0_2_, attendance1_.user_id as user_id6_0_2_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.478 [main] Loader - Static select for action ACTION_MERGE on entity entity.User: select user0_.user_id as user_id1_1_1_, user0_.password_hash as password2_1_1_, user0_.username as username3_1_1_, attendance1_.user_id as user_id6_0_3_, attendance1_.attendance_id as attendan1_0_3_, attendance1_.attendance_id as attendan1_0_0_, attendance1_.clock_in_time as clock_in2_0_0_, attendance1_.clock_out_time as clock_ou3_0_0_, attendance1_.status as status4_0_0_, attendance1_.date as date5_0_0_, attendance1_.user_id as user_id6_0_0_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.479 [main] Loader - Static select for action ACTION_REFRESH on entity entity.User: select user0_.user_id as user_id1_1_1_, user0_.password_hash as password2_1_1_, user0_.username as username3_1_1_, attendance1_.user_id as user_id6_0_3_, attendance1_.attendance_id as attendan1_0_3_, attendance1_.attendance_id as attendan1_0_0_, attendance1_.clock_in_time as clock_in2_0_0_, attendance1_.clock_out_time as clock_ou3_0_0_, attendance1_.status as status4_0_0_, attendance1_.date as date5_0_0_, attendance1_.user_id as user_id6_0_0_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister - Static SQL for entity: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Version select: select attendance_id from attendance where attendance_id =?
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Snapshot select: select attendance_.attendance_id, attendance_.clock_in_time as clock_in2_0_, attendance_.clock_out_time as clock_ou3_0_, attendance_.status as status4_0_, attendance_.date as date5_0_, attendance_.user_id as user_id6_0_ from attendance attendance_ where attendance_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Insert 0: insert into attendance (clock_in_time, clock_out_time, status, date, user_id, attendance_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Update 0: update attendance set clock_in_time=?, clock_out_time=?, status=?, date=?, user_id=? where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Delete 0: delete from attendance where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.479 [main] AbstractEntityPersister -  Identity insert: insert into attendance (clock_in_time, clock_out_time, status, date, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.479 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5fd43e58]
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.479 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68dfda77]
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : user.attendance
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Property path deemed to be circular : user.attendance
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : user.passwordHash
+[DEBUG] 2024-02-26 20-41-16.479 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2024-02-26 20-41-16.480 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.480 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.480 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Attendance)
+    - Returns
+       - EntityReturnImpl(entity=entity.Attendance, querySpaceUid=<gen:0>, path=entity.Attendance)
+          - EntityAttributeFetchImpl(entity=entity.User, querySpaceUid=<gen:1>, path=entity.Attendance.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {attendan1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id1_1_1_}
+
+[DEBUG] 2024-02-26 20-41-16.480 [main] EntityLoader - Static select for entity entity.Attendance [NONE]: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.password_hash as password2_1_1_, user1_.username as username3_1_1_ from attendance attendance0_ left outer join users user1_ on attendance0_.user_id=user1_.user_id where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.480 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@57cabdc3]
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.480 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@129c4d19]
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : user.attendance
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Property path deemed to be circular : user.attendance
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : user.passwordHash
+[DEBUG] 2024-02-26 20-41-16.480 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2024-02-26 20-41-16.481 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.481 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.481 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Attendance)
+    - Returns
+       - EntityReturnImpl(entity=entity.Attendance, querySpaceUid=<gen:0>, path=entity.Attendance)
+          - EntityAttributeFetchImpl(entity=entity.User, querySpaceUid=<gen:1>, path=entity.Attendance.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {attendan1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id1_1_1_}
+
+[DEBUG] 2024-02-26 20-41-16.482 [main] EntityLoader - Static select for entity entity.Attendance [READ]: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.password_hash as password2_1_1_, user1_.username as username3_1_1_ from attendance attendance0_ left outer join users user1_ on attendance0_.user_id=user1_.user_id where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.482 [main] Loader - Static select for action ACTION_MERGE on entity entity.Attendance: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_ from attendance attendance0_ where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.482 [main] Loader - Static select for action ACTION_REFRESH on entity entity.Attendance: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_ from attendance attendance0_ where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.486 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1ee40b5c]
+[DEBUG] 2024-02-26 20-41-16.486 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c448ef]
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.486 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2024-02-26 20-41-16.486 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.488 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.490 [main] LoadPlanTreePrinter - LoadPlan(collection=entity.User.attendance)
+    - Returns
+       - CollectionReturnImpl(collection=entity.User.attendance, querySpaceUid=<gen:0>, path=[entity.User.attendance])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:1>, path=[entity.User.attendance].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=entity.User.attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id6_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - attendan1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.Attendance)
+                - SQL table alias mapping - attendance0_
+                - alias suffix - 1_
+                - suffixed key columns - {attendan1_0_1_}
+
+[DEBUG] 2024-02-26 20-41-16.493 [main] CollectionLoader - Static select for collection entity.User.attendance: select attendance0_.user_id as user_id6_0_0_, attendance0_.attendance_id as attendan1_0_0_, attendance0_.attendance_id as attendan1_0_1_, attendance0_.clock_in_time as clock_in2_0_1_, attendance0_.clock_out_time as clock_ou3_0_1_, attendance0_.status as status4_0_1_, attendance0_.date as date5_0_1_, attendance0_.user_id as user_id6_0_1_ from attendance attendance0_ where attendance0_.user_id=?
+[INFO ] 2024-02-26 20-41-16.527 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2b79c8ff] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 2024-02-26 20-41-16.543 [main] Table - No alter strings for table : attendance
+[DEBUG] 2024-02-26 20-41-16.543 [main] Table - No alter strings for table : users
+[DEBUG] 2024-02-26 20-41-16.555 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2024-02-26 20-41-16.555 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2024-02-26 20-41-16.559 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2024-02-26 20-41-16.559 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2024-02-26 20-41-16.560 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2024-02-26 20-41-16.560 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2024-02-26 20-41-16.561 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@720f56e2
+[DEBUG] 2024-02-26 20-41-16.562 [main] SessionFactoryRegistry - Registering SessionFactory: 235c346b-96c2-4e86-b59a-1f1702ffbc34 (<unnamed>)
+[DEBUG] 2024-02-26 20-41-16.562 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2024-02-26 20-41-16.564 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2024-02-26 20-41-16.564 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2024-02-26 20-41-16.564 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[DEBUG] 2024-02-26 20-41-16.566 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2024-02-26 20-41-16.566 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2024-02-26 20-41-16.567 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2024-02-26 20-41-16.595 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2024-02-26 20-41-16.595 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2024-02-26 20-41-16.595 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2133661d
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@cf518cf
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1e43e323
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@eca6a74
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@113e13f9
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-16.595 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@124ac145
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@37e0292a
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@9b21bd3
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@42ea287
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5ec4ff02
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7efd28bd
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4068102e
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4068102e
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@36417a54
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@36417a54
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@60cf62ad
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@60cf62ad
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@14982a82
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6726cc69
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@5292ceca
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5292ceca
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@673919a7
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@673919a7
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@1f7076bc
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1f7076bc
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b3a7ef5
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@5b3a7ef5
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5d21202d
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5d21202d
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@65bdd558
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@65bdd558
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2af69643
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2af69643
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@22587507
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@22587507
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@508a65bf
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@508a65bf
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@66273da0
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@66273da0
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@60f70249
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@60f70249
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@558756be
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7ff35a3f
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@767a014e
+[DEBUG] 2024-02-26 20-41-16.596 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@9596ce8
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@2849434b
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2849434b
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@43e9089
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@43e9089
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@122d6c22
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@122d6c22
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4c6007fb
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4c6007fb
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@646c0a67
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@646c0a67
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5bc28f40
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@78054f54
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@15400fff
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@620c8641
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@c27a3a2
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3ed7821
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3c87e6b7
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@7fdab70c
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@455c1d8c
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@52d97ab6
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@52d97ab6
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@2924f1d8
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@7cbeac65
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@7cbeac65
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5af8bb51
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5af8bb51
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4b65d9f4
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@28da7d11
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@121bb45b
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@296e281a
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@296e281a
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2b441e56
+[DEBUG] 2024-02-26 20-41-16.597 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@267891bf
+[DEBUG] 2024-02-26 20-41-16.598 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3a109ff7
+[DEBUG] 2024-02-26 20-41-16.600 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@111a7973
+[DEBUG] 2024-02-26 20-41-16.600 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1a2773a8
+[DEBUG] 2024-02-26 20-41-16.600 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@78b0ec3a
+[DEBUG] 2024-02-26 20-41-16.600 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@46612bfc
+[DEBUG] 2024-02-26 20-41-16.600 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4f213a2
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-02-26 20-41-16.604 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[WARN ] 2024-02-26 20-41-16.605 [main] ConnectionProviderInitiator - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+[WARN ] 2024-02-26 20-41-16.605 [main] pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] 2024-02-26 20-41-16.605 [main] pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/clockit]
+[INFO ] 2024-02-26 20-41-16.605 [main] pooling - HHH10001001: Connection properties: {password=RootPass., user=root}
+[INFO ] 2024-02-26 20-41-16.605 [main] pooling - HHH10001003: Autocommit mode: false
+[DEBUG] 2024-02-26 20-41-16.605 [main] DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+[INFO ] 2024-02-26 20-41-16.605 [main] DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+[DEBUG] 2024-02-26 20-41-16.621 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.3.0
+      major : 8
+      minor : 3
+[DEBUG] 2024-02-26 20-41-16.621 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2024-02-26 20-41-16.621 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2024-02-26 20-41-16.621 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[DEBUG] 2024-02-26 20-41-16.621 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2024-02-26 20-41-16.622 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2024-02-26 20-41-16.626 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2024-02-26 20-41-16.627 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@482ba4b1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@307af381]
+[DEBUG] 2024-02-26 20-41-16.627 [main] AnnotationBinder - Binding entity from annotated class: entity.User
+[DEBUG] 2024-02-26 20-41-16.627 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2024-02-26 20-41-16.627 [main] EntityBinder - Import with entity name User
+[DEBUG] 2024-02-26 20-41-16.627 [main] EntityBinder - Bind entity entity.User on table users
+[DEBUG] 2024-02-26 20-41-16.628 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.628 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2024-02-26 20-41-16.628 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:id]
+[DEBUG] 2024-02-26 20-41-16.628 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.628 [main] PropertyBinder - Building property id
+[DEBUG] 2024-02-26 20-41-16.628 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(user_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-02-26 20-41-16.628 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.628 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=attendance, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=attendance_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='attendance_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2024-02-26 20-41-16.629 [main] CollectionBinder - Collection role: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.629 [main] PropertyBinder - Building property attendance
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password_hash, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] PropertyBinder - MetadataSourceProcessor property passwordHash with lazy=false
+[DEBUG] 2024-02-26 20-41-16.629 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:passwordHash]
+[DEBUG] 2024-02-26 20-41-16.629 [main] SimpleValueBinder - building SimpleValue for passwordHash
+[DEBUG] 2024-02-26 20-41-16.629 [main] PropertyBinder - Building property passwordHash
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.629 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2024-02-26 20-41-16.629 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.User:username]
+[DEBUG] 2024-02-26 20-41-16.629 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2024-02-26 20-41-16.629 [main] PropertyBinder - Building property username
+[DEBUG] 2024-02-26 20-41-16.629 [main] AnnotationBinder - Binding entity from annotated class: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.629 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2024-02-26 20-41-16.629 [main] EntityBinder - Import with entity name Attendance
+[DEBUG] 2024-02-26 20-41-16.629 [main] EntityBinder - Bind entity entity.Attendance on table attendance
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=attendance_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2024-02-26 20-41-16.630 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:id]
+[DEBUG] 2024-02-26 20-41-16.630 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - Building property id
+[DEBUG] 2024-02-26 20-41-16.630 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(attendance_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=clock_in_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - MetadataSourceProcessor property clockInTime with lazy=false
+[DEBUG] 2024-02-26 20-41-16.630 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clockInTime]
+[DEBUG] 2024-02-26 20-41-16.630 [main] SimpleValueBinder - building SimpleValue for clockInTime
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - Building property clockInTime
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=clock_out_time, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - MetadataSourceProcessor property clockOutTime with lazy=false
+[DEBUG] 2024-02-26 20-41-16.630 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clockOutTime]
+[DEBUG] 2024-02-26 20-41-16.630 [main] SimpleValueBinder - building SimpleValue for clockOutTime
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - Building property clockOutTime
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=status, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - MetadataSourceProcessor property clokedStatus with lazy=false
+[DEBUG] 2024-02-26 20-41-16.630 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:clokedStatus]
+[DEBUG] 2024-02-26 20-41-16.630 [main] SimpleValueBinder - building SimpleValue for clokedStatus
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - Building property clokedStatus
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - MetadataSourceProcessor property date with lazy=false
+[DEBUG] 2024-02-26 20-41-16.630 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Attendance:date]
+[DEBUG] 2024-02-26 20-41-16.630 [main] SimpleValueBinder - building SimpleValue for date
+[DEBUG] 2024-02-26 20-41-16.630 [main] PropertyBinder - Building property date
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2024-02-26 20-41-16.630 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(attendance), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2024-02-26 20-41-16.631 [main] PropertyBinder - Building property user
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for passwordHash
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for clockInTime
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for clockOutTime
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for clokedStatus
+[DEBUG] 2024-02-26 20-41-16.631 [main] SimpleValueBinder - Starting fillSimpleValue for date
+[DEBUG] 2024-02-26 20-41-16.631 [main] PrimaryKey - Forcing column [user_id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2024-02-26 20-41-16.631 [main] PrimaryKey - Forcing column [attendance_id] to be non-null as it is part of the primary key for table [attendance]
+[DEBUG] 2024-02-26 20-41-16.631 [main] CollectionSecondPass - Second pass for collection: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.631 [main] CollectionBinder - Binding a OneToMany: entity.User.attendance through a foreign key
+[DEBUG] 2024-02-26 20-41-16.631 [main] CollectionBinder - Mapping collection: entity.User.attendance -> attendance
+[DEBUG] 2024-02-26 20-41-16.631 [main] TableBinder - Retrieving property entity.Attendance.user
+[DEBUG] 2024-02-26 20-41-16.631 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.631 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.User
+[DEBUG] 2024-02-26 20-41-16.632 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.User
+[DEBUG] 2024-02-26 20-41-16.633 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2024-02-26 20-41-16.633 [main] Settings - SessionFactory name : null
+[DEBUG] 2024-02-26 20-41-16.633 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2024-02-26 20-41-16.633 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2024-02-26 20-41-16.633 [main] Settings - Statistics: disabled
+[DEBUG] 2024-02-26 20-41-16.633 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Default null ordering: NONE
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Query language substitutions: {}
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Named query checking : enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Second-level cache: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JDBC batch size: 15
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JPA compliance - query : 
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2024-02-26 20-41-16.634 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2024-02-26 20-41-16.634 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2024-02-26 20-41-16.636 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2024-02-26 20-41-16.636 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\plugins\junit\lib\junit5-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.2\plugins\junit\lib\junit-rt.jar;C:\IdeaProjects\ClockIt\target\test-classes;C:\IdeaProjects\ClockIt\target\classes;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-runner\1.0.0\junit-platform-runner-1.0.0.jar;C:\Users\cheve\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-launcher\1.0.0\junit-platform-launcher-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-suite-api\1.0.0\junit-platform-suite-api-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0\junit-platform-commons-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\vintage\junit-vintage-engine\4.12.0\junit-vintage-engine-4.12.0.jar;C:\Users\cheve\.m2\repository\org\junit\platform\junit-platform-engine\1.0.0\junit-platform-engine-1.0.0.jar;C:\Users\cheve\.m2\repository\org\opentest4j\opentest4j\1.0.0\opentest4j-1.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.0.0\junit-jupiter-engine-5.0.0.jar;C:\Users\cheve\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0\junit-jupiter-api-5.0.0.jar;C:\Users\cheve\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\cheve\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\cheve\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar;C:\Users\cheve\.m2\repository\mysql\mysql-connector-java\8.0.16\mysql-connector-java-8.0.16.jar;C:\Users\cheve\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\cheve\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar;C:\Users\cheve\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\cheve\.m2\repository\org\apache\logging\log4j\log4j-core\2.10.0\log4j-core-2.10.0.jar;C:\Users\cheve\.m2\repository\org\hibernate\hibernate-core\5.4.4.Final\hibernate-core-5.4.4.Final.jar;C:\Users\cheve\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\cheve\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\cheve\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\cheve\.m2\repository\net\bytebuddy\byte-buddy\1.9.11\byte-buddy-1.9.11.jar;C:\Users\cheve\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\cheve\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\cheve\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\cheve\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\cheve\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\cheve\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\cheve\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\cheve\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\cheve\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\cheve\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\cheve\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\cheve\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\cheve\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, user.variant=, java.vendor.url=https://adoptium.net/, user.timezone=America/Chicago, os.name=Windows 11, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.22+7\bin, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 persistence.UserDaoTest,testGetByNonExistentId, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\cheve, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-01-16, java.home=C:\Program Files\Java\jdk-11.0.22+7, file.separator=\, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.22+7, user.name=cheve, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/clockit, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=Temurin-11.0.22+7, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=C:\Users\cheve\AppData\Local\Temp\, java.version=11.0.22, user.dir=C:\IdeaProjects\ClockIt, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1b17d8ab, java.library.path=C:\Program Files\Java\jdk-11.0.22+7\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\cheve\AppData\Local\Microsoft\WindowsApps;., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, java.vm.version=11.0.22+7, java.specification.maintenance.version=2, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/clockit, java.class.version=55.0}
+[DEBUG] 2024-02-26 20-41-16.636 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2024-02-26 20-41-16.636 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2024-02-26 20-41-16.636 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2024-02-26 20-41-16.636 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@482ba4b1] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@7f6b7426]
+[DEBUG] 2024-02-26 20-41-16.636 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2024-02-26 20-41-16.636 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2024-02-26 20-41-16.636 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.User] is safe
+[DEBUG] 2024-02-26 20-41-16.636 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.User
+[DEBUG] 2024-02-26 20-41-16.637 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Attendance] is safe
+[DEBUG] 2024-02-26 20-41-16.637 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.637 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Attendance] is safe
+[DEBUG] 2024-02-26 20-41-16.637 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractCollectionPersister - Static SQL for collection: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractCollectionPersister -  Row insert: update attendance set user_id=? where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractCollectionPersister -  Row update: update attendance set  where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractCollectionPersister -  Row delete: update attendance set user_id=null where user_id=? and attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractCollectionPersister -  One-shot delete: update attendance set user_id=null where user_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister - Static SQL for entity: entity.User
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Version select: select user_id from users where user_id =?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Snapshot select: select user_.user_id, user_.password_hash as password2_1_, user_.username as username3_1_ from users user_ where user_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Insert 0: insert into users (password_hash, username, user_id) values (?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Update 0: update users set password_hash=?, username=? where user_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Delete 0: delete from users where user_id=?
+[DEBUG] 2024-02-26 20-41-16.639 [main] AbstractEntityPersister -  Identity insert: insert into users (password_hash, username) values (?, ?)
+[DEBUG] 2024-02-26 20-41-16.639 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d66a126]
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance
+[DEBUG] 2024-02-26 20-41-16.639 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2fdf22f7]
+[DEBUG] 2024-02-26 20-41-16.639 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a2546d6]
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockInTime
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockOutTime
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clokedStatus
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance.date
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : attendance.user
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Property path deemed to be circular : attendance.user
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : passwordHash
+[DEBUG] 2024-02-26 20-41-16.639 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2024-02-26 20-41-16.639 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.640 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.640 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+          - CollectionAttributeFetchImpl(collection=entity.User.attendance, querySpaceUid=<gen:1>, path=entity.User.attendance)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:2>, path=entity.User.attendance.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(attendance)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.User.attendance)
+                - SQL table alias mapping - attendance1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - attendan1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Attendance)
+                      - SQL table alias mapping - attendance1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {attendan1_0_2_}
+
+[DEBUG] 2024-02-26 20-41-16.640 [main] EntityLoader - Static select for entity entity.User [NONE]: select user0_.user_id as user_id1_1_0_, user0_.password_hash as password2_1_0_, user0_.username as username3_1_0_, attendance1_.user_id as user_id6_0_1_, attendance1_.attendance_id as attendan1_0_1_, attendance1_.attendance_id as attendan1_0_2_, attendance1_.clock_in_time as clock_in2_0_2_, attendance1_.clock_out_time as clock_ou3_0_2_, attendance1_.status as status4_0_2_, attendance1_.date as date5_0_2_, attendance1_.user_id as user_id6_0_2_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.640 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@20ffb8d5]
+[DEBUG] 2024-02-26 20-41-16.640 [main] MetamodelGraphWalker - Visiting attribute path : attendance
+[DEBUG] 2024-02-26 20-41-16.640 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@57e03347]
+[DEBUG] 2024-02-26 20-41-16.640 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2edb2f8b]
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockInTime
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clockOutTime
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : attendance.clokedStatus
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : attendance.date
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : attendance.user
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Property path deemed to be circular : attendance.user
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : passwordHash
+[DEBUG] 2024-02-26 20-41-16.641 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2024-02-26 20-41-16.641 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.641 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.641 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.User)
+    - Returns
+       - EntityReturnImpl(entity=entity.User, querySpaceUid=<gen:0>, path=entity.User)
+          - CollectionAttributeFetchImpl(collection=entity.User.attendance, querySpaceUid=<gen:1>, path=entity.User.attendance)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:2>, path=entity.User.attendance.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(attendance)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.User.attendance)
+                - SQL table alias mapping - attendance1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - attendan1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Attendance)
+                      - SQL table alias mapping - attendance1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {attendan1_0_2_}
+
+[DEBUG] 2024-02-26 20-41-16.641 [main] EntityLoader - Static select for entity entity.User [READ]: select user0_.user_id as user_id1_1_0_, user0_.password_hash as password2_1_0_, user0_.username as username3_1_0_, attendance1_.user_id as user_id6_0_1_, attendance1_.attendance_id as attendan1_0_1_, attendance1_.attendance_id as attendan1_0_2_, attendance1_.clock_in_time as clock_in2_0_2_, attendance1_.clock_out_time as clock_ou3_0_2_, attendance1_.status as status4_0_2_, attendance1_.date as date5_0_2_, attendance1_.user_id as user_id6_0_2_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] Loader - Static select for action ACTION_MERGE on entity entity.User: select user0_.user_id as user_id1_1_1_, user0_.password_hash as password2_1_1_, user0_.username as username3_1_1_, attendance1_.user_id as user_id6_0_3_, attendance1_.attendance_id as attendan1_0_3_, attendance1_.attendance_id as attendan1_0_0_, attendance1_.clock_in_time as clock_in2_0_0_, attendance1_.clock_out_time as clock_ou3_0_0_, attendance1_.status as status4_0_0_, attendance1_.date as date5_0_0_, attendance1_.user_id as user_id6_0_0_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] Loader - Static select for action ACTION_REFRESH on entity entity.User: select user0_.user_id as user_id1_1_1_, user0_.password_hash as password2_1_1_, user0_.username as username3_1_1_, attendance1_.user_id as user_id6_0_3_, attendance1_.attendance_id as attendan1_0_3_, attendance1_.attendance_id as attendan1_0_0_, attendance1_.clock_in_time as clock_in2_0_0_, attendance1_.clock_out_time as clock_ou3_0_0_, attendance1_.status as status4_0_0_, attendance1_.date as date5_0_0_, attendance1_.user_id as user_id6_0_0_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister - Static SQL for entity: entity.Attendance
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Version select: select attendance_id from attendance where attendance_id =?
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Snapshot select: select attendance_.attendance_id, attendance_.clock_in_time as clock_in2_0_, attendance_.clock_out_time as clock_ou3_0_, attendance_.status as status4_0_, attendance_.date as date5_0_, attendance_.user_id as user_id6_0_ from attendance attendance_ where attendance_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Insert 0: insert into attendance (clock_in_time, clock_out_time, status, date, user_id, attendance_id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Update 0: update attendance set clock_in_time=?, clock_out_time=?, status=?, date=?, user_id=? where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Delete 0: delete from attendance where attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.642 [main] AbstractEntityPersister -  Identity insert: insert into attendance (clock_in_time, clock_out_time, status, date, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2024-02-26 20-41-16.642 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7772d266]
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.642 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b8a144e]
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : user.attendance
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Property path deemed to be circular : user.attendance
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : user.passwordHash
+[DEBUG] 2024-02-26 20-41-16.642 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2024-02-26 20-41-16.642 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.642 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.643 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Attendance)
+    - Returns
+       - EntityReturnImpl(entity=entity.Attendance, querySpaceUid=<gen:0>, path=entity.Attendance)
+          - EntityAttributeFetchImpl(entity=entity.User, querySpaceUid=<gen:1>, path=entity.Attendance.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {attendan1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id1_1_1_}
+
+[DEBUG] 2024-02-26 20-41-16.643 [main] EntityLoader - Static select for entity entity.Attendance [NONE]: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.password_hash as password2_1_1_, user1_.username as username3_1_1_ from attendance attendance0_ left outer join users user1_ on attendance0_.user_id=user1_.user_id where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.643 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e38c472]
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.643 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@759a678a]
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : user.attendance
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Property path deemed to be circular : user.attendance
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : user.passwordHash
+[DEBUG] 2024-02-26 20-41-16.643 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2024-02-26 20-41-16.643 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.643 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.643 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Attendance)
+    - Returns
+       - EntityReturnImpl(entity=entity.Attendance, querySpaceUid=<gen:0>, path=entity.Attendance)
+          - EntityAttributeFetchImpl(entity=entity.User, querySpaceUid=<gen:1>, path=entity.Attendance.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {attendan1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id1_1_1_}
+
+[DEBUG] 2024-02-26 20-41-16.643 [main] EntityLoader - Static select for entity entity.Attendance [READ]: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_, user1_.user_id as user_id1_1_1_, user1_.password_hash as password2_1_1_, user1_.username as username3_1_1_ from attendance attendance0_ left outer join users user1_ on attendance0_.user_id=user1_.user_id where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.644 [main] Loader - Static select for action ACTION_MERGE on entity entity.Attendance: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_ from attendance attendance0_ where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.644 [main] Loader - Static select for action ACTION_REFRESH on entity entity.Attendance: select attendance0_.attendance_id as attendan1_0_0_, attendance0_.clock_in_time as clock_in2_0_0_, attendance0_.clock_out_time as clock_ou3_0_0_, attendance0_.status as status4_0_0_, attendance0_.date as date5_0_0_, attendance0_.user_id as user_id6_0_0_ from attendance attendance0_ where attendance0_.attendance_id=?
+[DEBUG] 2024-02-26 20-41-16.644 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@14b8a751]
+[DEBUG] 2024-02-26 20-41-16.644 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7345f97d]
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Visiting attribute path : clockInTime
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Visiting attribute path : clockOutTime
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Visiting attribute path : clokedStatus
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Visiting attribute path : date
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2024-02-26 20-41-16.644 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2024-02-26 20-41-16.644 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2024-02-26 20-41-16.644 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2024-02-26 20-41-16.644 [main] LoadPlanTreePrinter - LoadPlan(collection=entity.User.attendance)
+    - Returns
+       - CollectionReturnImpl(collection=entity.User.attendance, querySpaceUid=<gen:0>, path=[entity.User.attendance])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Attendance, querySpaceUid=<gen:1>, path=[entity.User.attendance].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=entity.User.attendance)
+          - SQL table alias mapping - attendance0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id6_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - attendan1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.Attendance)
+                - SQL table alias mapping - attendance0_
+                - alias suffix - 1_
+                - suffixed key columns - {attendan1_0_1_}
+
+[DEBUG] 2024-02-26 20-41-16.644 [main] CollectionLoader - Static select for collection entity.User.attendance: select attendance0_.user_id as user_id6_0_0_, attendance0_.attendance_id as attendan1_0_0_, attendance0_.attendance_id as attendan1_0_1_, attendance0_.clock_in_time as clock_in2_0_1_, attendance0_.clock_out_time as clock_ou3_0_1_, attendance0_.status as status4_0_1_, attendance0_.date as date5_0_1_, attendance0_.user_id as user_id6_0_1_ from attendance attendance0_ where attendance0_.user_id=?
+[INFO ] 2024-02-26 20-41-16.645 [main] access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@150d6eaf] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[DEBUG] 2024-02-26 20-41-16.651 [main] Table - No alter strings for table : attendance
+[DEBUG] 2024-02-26 20-41-16.651 [main] Table - No alter strings for table : users
+[DEBUG] 2024-02-26 20-41-16.660 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2024-02-26 20-41-16.660 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2024-02-26 20-41-16.664 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2024-02-26 20-41-16.664 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2024-02-26 20-41-16.664 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2024-02-26 20-41-16.664 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2024-02-26 20-41-16.664 [main] SessionFactoryRegistry - Registering SessionFactory: 485861fb-503e-40cf-832e-d288efaf4127 (<unnamed>)
+[DEBUG] 2024-02-26 20-41-16.664 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2024-02-26 20-41-16.717 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2024-02-26 20-41-16.727 [main] SQL - select user0_.user_id as user_id1_1_0_, user0_.password_hash as password2_1_0_, user0_.username as username3_1_0_, attendance1_.user_id as user_id6_0_1_, attendance1_.attendance_id as attendan1_0_1_, attendance1_.attendance_id as attendan1_0_2_, attendance1_.clock_in_time as clock_in2_0_2_, attendance1_.clock_out_time as clock_ou3_0_2_, attendance1_.status as status4_0_2_, attendance1_.date as date5_0_2_, attendance1_.user_id as user_id6_0_2_ from users user0_ left outer join attendance attendance1_ on user0_.user_id=attendance1_.user_id where user0_.user_id=?
+[DEBUG] 2024-02-26 20-41-16.735 [main] CollectionLoadContext - No collections were found in result set for role: entity.User.attendance
+[DEBUG] 2024-02-26 20-41-16.735 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2024-02-26 20-41-16.735 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.User#9999
+[DEBUG] 2024-02-26 20-41-16.737 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-02-26 20-41-16.745 [main] SessionFactoryImpl - HHH000031: Closing
+[DEBUG] 2024-02-26 20-41-16.746 [main] TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@4b4927e5] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@40ef0af8]
+[DEBUG] 2024-02-26 20-41-16.746 [main] AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[INFO ] 2024-02-26 20-41-16.747 [main] pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/clockit]
+[DEBUG] 2024-02-26 20-41-16.747 [main] BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

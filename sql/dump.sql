@@ -28,8 +28,7 @@ CREATE TABLE `attendance` (
   `clock_in_time` datetime DEFAULT NULL,
   `clock_out_time` datetime DEFAULT NULL,
   `date` date DEFAULT NULL,
-  `status` varchar(50) DEFAULT NULL,
-  `id` int NOT NULL,
+  `status` int NOT NULL,
   PRIMARY KEY (`attendance_id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `attendance_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
@@ -42,7 +41,7 @@ CREATE TABLE `attendance` (
 
 LOCK TABLES `attendance` WRITE;
 /*!40000 ALTER TABLE `attendance` DISABLE KEYS */;
-INSERT INTO `attendance` VALUES (1,1,'2024-02-17 09:00:00','2024-02-17 17:00:00','2024-02-17','Present',1);
+INSERT INTO `attendance` VALUES (1,1,'2024-02-17 09:00:00','2024-02-17 17:00:00','2024-02-17',1);
 /*!40000 ALTER TABLE `attendance` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,9 +57,9 @@ CREATE TABLE `users` (
   `username` varchar(255) DEFAULT NULL,
   `password_hash` varchar(255) DEFAULT NULL,
   `role_id` int DEFAULT NULL,
-  `id` int NOT NULL,
+  `attendance_id` int DEFAULT NULL,
   PRIMARY KEY (`user_id`),
-  KEY `role_id` (`role_id`)
+  KEY `attendance_id` (`attendance_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -83,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-23 20:46:12
+-- Dump completed on 2024-02-24  5:44:34

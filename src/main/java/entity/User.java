@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
+import java.util.List;
 import javax.persistence.*;
 
 /**
@@ -18,14 +19,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    @Column(name = "user_id")
     private int id;
     @Column(name = "username")
     private String username;
     @Column(name = "password_hash")
     private String passwordHash;
-    @ManyToOne
-    @JoinColumn(name = "attendance_id")
-    private Attendance attendance;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private List<Attendance> attendance;
 
 
     /**
@@ -98,6 +99,24 @@ public class User {
      */
     public void setPasswordHash(String passwordHash) {
         this.passwordHash = passwordHash;
+    }
+
+    /**
+     * Gets attendance.
+     *
+     * @return the attendance
+     */
+    public List<Attendance> getAttendance() {
+        return attendance;
+    }
+
+    /**
+     * Sets attendance.
+     *
+     * @param attendance the attendance
+     */
+    public void setAttendance(List<Attendance> attendance) {
+        this.attendance = attendance;
     }
 
     @Override

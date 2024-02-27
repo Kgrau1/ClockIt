@@ -3,3 +3,220 @@
 [INFO ] 2024-02-23 21-11-52.810 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
 [INFO ] 2024-02-23 21-11-52.820 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
 [INFO ] 2024-02-23 21-21-52.386 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-24 05-44-07.739 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 05-44-07.743 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 05-50-47.150 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 05-50-47.154 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 05-55-34.529 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 05-56-10.319 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 05-56-10.341 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 05-57-30.788 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 05-57-30.811 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-00-18.863 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-00-18.879 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-01-00.396 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-01-00.420 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-01-00.420 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-07-49.556 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-07-49.579 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-07-49.579 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-08-24.116 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 06-08-24.120 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 06-08-35.926 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-08-35.945 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-08-35.945 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-12-06.923 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-12-06.949 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-12-06.949 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-13-40.228 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 06-13-40.231 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-24 06-13-58.807 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-13-58.827 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-13-58.828 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-17-27.804 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-17-27.821 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-17-27.821 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-20-40.916 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-20-40.941 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-20-40.941 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-24 06-24-28.251 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-24 06-24-28.268 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-24 06-24-28.269 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-14-27.636 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-14-27.659 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-14-27.659 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-17-36.098 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-17-36.127 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-17-36.127 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-24-11.797 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-24-11.810 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-24-20.928 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-24-20.950 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-24-20.950 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-28-22.920 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-28-22.929 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-28-34.147 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-28-34.164 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-28-34.164 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-31-44.220 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-31-44.224 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 05-31-54.182 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-31-54.199 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-31-54.199 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-32-32.165 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 05-32-32.189 [main] UserDaoTest - New user: User{id=2, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 05-32-32.189 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 05-43-37.724 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 05-47-37.895 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 06-34-19.332 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-01-09.496 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-02-36.349 [main] UserDaoTest - Before cleandb
+[INFO ] 2024-02-25 10-02-36.881 [main] UserDaoTest - After cleandb
+[INFO ] 2024-02-25 10-02-38.346 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-04-53.177 [main] UserDaoTest - Before cleandb
+[INFO ] 2024-02-25 10-04-53.741 [main] UserDaoTest - After cleandbtestUtils.Database@4362d7df
+[INFO ] 2024-02-25 10-04-55.262 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-05-26.462 [main] UserDaoTest - Before cleandb
+[INFO ] 2024-02-25 10-05-27.018 [main] UserDaoTest - After cleandbtestUtils.Database@4362d7df
+[INFO ] 2024-02-25 10-05-28.480 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-09-46.545 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-09-46.548 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-10-03.265 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 10-10-03.299 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-10-03.300 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 10-10-14.382 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 10-10-14.400 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-10-14.401 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 10-10-15.914 [main] UserDaoTest - New user after dao.insert: User{id=3, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-10-15.937 [main] GenericDao - Generic Dao entity: User{id=3, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-14-33.426 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-14-33.472 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-15-07.099 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-20-33.817 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-25 10-20-33.869 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-24-45.819 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-25-19.580 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-25-19.624 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-33-30.427 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-33-30.433 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-33-30.581 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-25 10-33-30.581 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-33-30.581 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-25 10-33-30.605 [main] UserDaoTest - New user after dao.insert: User{id=4, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-33-30.609 [main] GenericDao - Generic Dao entity: User{id=4, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-25 10-33-30.735 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-25 10-33-30.754 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 10-33-31.145 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-33-31.165 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-25 10-51-48.421 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-25 10-51-48.476 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 11-46-26.782 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 11-46-27.103 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-46-27.127 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 11-46-27.550 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-50-04.876 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 11-51-08.548 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 11-52-33.898 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-52-33.950 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-56-46.327 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 11-56-58.350 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 11-56-58.545 [main] GenericDao - Generic Dao entity: Attendance{id=4, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-25 11-56-58.705 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-56-58.723 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 11-56-59.167 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 11-56-59.190 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 12-10-56.379 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-25 12-10-56.595 [main] GenericDao - Generic Dao entity: Attendance{id=5, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-25 12-10-56.733 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 12-10-56.752 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 12-10-57.166 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 12-10-57.181 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 12-18-36.519 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 12-19-17.900 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 12-19-17.940 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 14-03-11.348 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 14-03-11.386 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-25 14-04-37.575 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 14-04-37.579 [main] AttendanceDaoTest - Id #2: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 14-04-37.589 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-25 14-04-37.634 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-20-25.164 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-26 16-20-25.209 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-27-27.050 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 16-27-27.095 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-32-21.875 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 16-34-17.936 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 16-34-18.013 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-35-05.315 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 16-35-05.319 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 16-35-05.494 [main] UserDaoTest - Made it into insert test
+[INFO ] 2024-02-26 16-35-05.494 [main] UserDaoTest - New user: User{id=0, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 16-35-05.494 [main] UserDaoTest - Before dao.insert
+[INFO ] 2024-02-26 16-35-05.530 [main] UserDaoTest - New user after dao.insert: User{id=5, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 16-35-05.536 [main] GenericDao - Generic Dao entity: User{id=5, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 16-35-05.688 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 16-35-05.730 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-35-06.182 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 16-35-06.204 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 16-35-20.994 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17 00:00:00.0, clokedStatus=true}
+[INFO ] 2024-02-26 16-35-21.206 [main] GenericDao - Generic Dao entity: Attendance{id=6, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 16-35-21.343 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-26 16-35-21.367 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 16-35-21.759 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-26 16-35-21.774 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17 00:00:00.0, clokedStatus=false}
+[INFO ] 2024-02-26 19-37-33.121 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 19-44-47.617 [main] GenericDao - Generic Dao entity: Attendance{id=7, clockInTime=null, clockOutTime=null, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 19-47-50.298 [main] GenericDao - Generic Dao entity: Attendance{id=8, clockInTime=null, clockOutTime=null, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 19-52-32.546 [main] GenericDao - Generic Dao entity: Attendance{id=9, clockInTime=2024-02-20T11:00, clockOutTime=2024-02-20T13:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 20-06-19.897 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17, clokedStatus=true}
+[INFO ] 2024-02-26 20-06-20.093 [main] GenericDao - Generic Dao entity: Attendance{id=10, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 20-06-20.223 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-06-20.240 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-06-20.656 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-06-20.671 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-06-34.650 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-06-34.653 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-06-34.840 [main] GenericDao - Generic Dao entity: User{id=12, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 20-06-34.982 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 20-06-35.004 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-06-35.441 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-06-35.458 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-06-48.647 [main] GenericDao - Generic Dao entity: Attendance{id=11, clockInTime=2024-02-20T11:00, clockOutTime=2024-02-20T13:00, date=2024-02-20, clokedStatus=false}
+[INFO ] 2024-02-26 20-13-05.386 [main] GenericDao - Generic Dao entity: User{id=14, username='Steve', passwordHash='656ge65g'}
+[INFO ] 2024-02-26 20-16-01.324 [main] GenericDao - Generic Dao entity: User{id=15, username='Steve', passwordHash='656ge65g'}
+[INFO ] 2024-02-26 20-16-52.070 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-16-52.077 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-16-52.247 [main] GenericDao - Generic Dao entity: User{id=16, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 20-16-52.361 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 20-16-52.380 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-16-52.767 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-16-52.783 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-17-33.374 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17, clokedStatus=true}
+[INFO ] 2024-02-26 20-17-33.576 [main] GenericDao - Generic Dao entity: Attendance{id=14, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 20-17-33.732 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-17-33.749 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-17-34.149 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-17-34.161 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-17-45.769 [main] GenericDao - Generic Dao entity: Attendance{id=15, clockInTime=2024-02-20T11:00, clockOutTime=2024-02-20T13:00, date=2024-02-20, clokedStatus=false}
+[INFO ] 2024-02-26 20-17-45.862 [main] GenericDao - Generic Dao entity: User{id=18, username='Steve', passwordHash='656ge65g'}
+[INFO ] 2024-02-26 20-30-52.626 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-32-50.317 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17, clokedStatus=true}
+[INFO ] 2024-02-26 20-37-07.932 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17, clokedStatus=true}
+[INFO ] 2024-02-26 20-41-16.738 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-42-06.755 [main] GenericDao - Generic Dao entity: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-42-06.763 [main] UserDaoTest - Retrieved user: User{id=1, username='Kevg', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-42-07.099 [main] GenericDao - Generic Dao entity: User{id=19, username='JohnDoe', passwordHash='5556656'}
+[INFO ] 2024-02-26 20-42-07.226 [main] GenericDao - Generic Dao entity: User{id=2, username='jSmith', passwordHash='5151321'}
+[INFO ] 2024-02-26 20-42-07.245 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-42-07.475 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-42-07.832 [main] GenericDao - Generic Dao entity: User{id=3, username='grapes', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-42-07.854 [main] GenericDao - Generic Dao entity: User{id=3, username='Herbert', passwordHash='5151321nbmbbhj'}
+[INFO ] 2024-02-26 20-42-16.615 [main] GenericDao - Generic Dao entity: Attendance{id=1, clockInTime=2024-02-17T09:00, clockOutTime=2024-02-17T17:00, date=2024-02-17, clokedStatus=true}
+[INFO ] 2024-02-26 20-42-16.925 [main] GenericDao - Generic Dao entity: Attendance{id=18, clockInTime=2024-02-18T08:00, clockOutTime=2024-02-18T16:00, date=null, clokedStatus=false}
+[INFO ] 2024-02-26 20-42-17.050 [main] GenericDao - Generic Dao entity: Attendance{id=2, clockInTime=2024-02-17T09:30, clockOutTime=2024-02-17T16:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-42-17.067 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-42-17.287 [main] GenericDao - Generic Dao entity: null
+[INFO ] 2024-02-26 20-42-17.702 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T15:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-42-17.716 [main] GenericDao - Generic Dao entity: Attendance{id=3, clockInTime=2024-02-17T10:00, clockOutTime=2024-02-17T11:00, date=2024-02-17, clokedStatus=false}
+[INFO ] 2024-02-26 20-42-29.569 [main] GenericDao - Generic Dao entity: Attendance{id=19, clockInTime=2024-02-20T11:00, clockOutTime=2024-02-20T13:00, date=2024-02-20, clokedStatus=false}
+[INFO ] 2024-02-26 20-42-29.677 [main] GenericDao - Generic Dao entity: User{id=21, username='Steve', passwordHash='656ge65g'}
