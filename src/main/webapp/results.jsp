@@ -5,6 +5,11 @@ charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@include file="head.jsp"%>
 
 <html>
+    <head>
+        <title>Timeclock</title>
+        <%@ include file="head.jsp" %>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
 <body>
 <div class="container">
     <section class="">

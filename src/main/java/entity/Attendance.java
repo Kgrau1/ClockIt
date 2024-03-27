@@ -32,7 +32,7 @@ public class Attendance {
     @Column(name = "date")
     private LocalDate date;
     @Column(name = "status")
-    private boolean clokedStatus;
+    private boolean clockedStatus;
 
     /**
      * Instantiates a new Attendance.
@@ -48,14 +48,14 @@ public class Attendance {
      * @param clockInTime  the clock in time
      * @param clockOutTime the clock out time
      * @param date         the date
-     * @param clokedStatus the cloked status
+     * @param clockedStatus the clocked status
      */
-    public Attendance(int id, LocalDateTime clockInTime, LocalDateTime clockOutTime, LocalDate date, boolean clokedStatus) {
+    public Attendance(int id, LocalDateTime clockInTime, LocalDateTime clockOutTime, LocalDate date, boolean clockedStatus) {
         this.id = id;
         this.clockInTime = clockInTime;
         this.clockOutTime = clockOutTime;
         this.date = date;
-        this.clokedStatus = clokedStatus;
+        this.clockedStatus = clockedStatus;
     }
 
     /**
@@ -95,21 +95,21 @@ public class Attendance {
     }
 
     /**
-     * Is cloked status boolean.
+     * Is clocked status boolean.
      *
      * @return the boolean
      */
-    public boolean isClokedStatus() {
-        return clokedStatus;
+    public boolean isClockedStatus() {
+        return clockedStatus;
     }
 
     /**
-     * Sets cloked status.
+     * Sets clocked status.
      *
-     * @param clokedStatus the cloked status
+     * @param clockedStatus the clocked status
      */
-    public void setClokedStatus(boolean clokedStatus) {
-        this.clokedStatus = clokedStatus;
+    public void setClockedStatus(boolean clockedStatus) {
+        this.clockedStatus = clockedStatus;
     }
 
     /**
@@ -173,7 +173,7 @@ public class Attendance {
                 ", clockInTime=" + clockInTime +
                 ", clockOutTime=" + clockOutTime +
                 ", date=" + date +
-                ", clokedStatus=" + clokedStatus +
+                ", clockedStatus=" + clockedStatus +
                 '}';
     }
 }
