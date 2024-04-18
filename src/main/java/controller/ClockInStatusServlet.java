@@ -26,25 +26,18 @@ public class ClockInStatusServlet extends HttpServlet {
         User user = userDao.getById(userId);
         if (user == null) {
             request.setAttribute("userNotFound", true);
-            RequestDispatcher errorDispatcher = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher errorDispatcher = request.getRequestDispatcher("error.jsp");
             errorDispatcher.forward(request, response);
             return;
         }
 
-        List<Attendance> userAttendances = attendanceDao.getById(userId);
-
-        boolean isClockedIn = false;
-        for (int i = userAttendances.length() - 1; i >= 0; i--) {
-            if (attendance.isClockedStatus()) {
-                isClockedIn = true;
-                break;
-            }
-        }
+        Attendance mostRecentAttendance = attendanceDao.getById(userId);
+        boolean isClockedIn = mostRecentAttendance.isClockedStatus();
 
         request.setAttribute("isClockedIn", isClockedIn);
         request.setAttribute("userId", userId);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("clockingOptions.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
 
     }

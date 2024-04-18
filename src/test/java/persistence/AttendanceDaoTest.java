@@ -76,6 +76,7 @@ class AttendanceDaoTest {
         Attendance retrievedHours = (Attendance) dao.getById(1);
         assertNotNull(retrievedHours);
         assertEquals(LocalDateTime.parse("2024-02-17 09:00:00", DATE_TIME_FORMATTER), retrievedHours.getClockInTime());
+        assertEquals(LocalDateTime.parse("2024-02-17 17:00:00", DATE_TIME_FORMATTER), retrievedHours.getClockOutTime());
     }
 
     /**

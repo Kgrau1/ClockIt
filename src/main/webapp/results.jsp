@@ -6,14 +6,14 @@ charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
 <html>
     <head>
-        <title>Timeclock</title>
+        <title>Results</title>
         <%@ include file="head.jsp" %>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 <body>
 <div class="container">
     <section class="">
-        <a href="index.jsp">Home</a>
+        <a href="error.jsp">Home</a>
         <h2>Search Results: ClockIt project</h2>
 
         <c:if test="${empty users}">

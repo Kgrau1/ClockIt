@@ -7,7 +7,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 import javax.persistence.*;
 
 /**
@@ -44,10 +43,10 @@ public class Attendance {
     /**
      * Instantiates a new Attendance.
      *
-     * @param id           the id
-     * @param clockInTime  the clock in time
-     * @param clockOutTime the clock out time
-     * @param date         the date
+     * @param id            the id
+     * @param clockInTime   the clock in time
+     * @param clockOutTime  the clock out time
+     * @param date          the date
      * @param clockedStatus the clocked status
      */
     public Attendance(int id, LocalDateTime clockInTime, LocalDateTime clockOutTime, LocalDate date, boolean clockedStatus) {

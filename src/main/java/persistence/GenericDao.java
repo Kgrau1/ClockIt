@@ -1,5 +1,6 @@
 package persistence;
 
+import entity.Attendance;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
@@ -49,7 +50,13 @@ public class GenericDao<T> {
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
-        logger.info("Generic Dao entity: " + entity);
+        session.close();
+        return entity;
+    }
+
+    public <T>T getByUsername(String username) {
+        Session session = getSession();
+        T entity = (T)session.get(type, username);
         session.close();
         return entity;
     }
@@ -109,5 +116,40 @@ public class GenericDao<T> {
         session.close();
         return list;
     }
+
+    public List<T> getByPropertyEqual(String propertyName, Object value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<T> list = session.createQuery(query).getResultList();
+        session.close();
+        return list;
+    }
+
+    public Attendance findMostRecentAttendanceByUser(String userName) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Attendance> query = builder.createQuery(Attendance.class);
+        Root<Attendance> root = query.from(Attendance.class);
+
+        query.select(root)
+                .where(builder.equal(root.get("user").get("id"), userName))
+                .orderBy(builder.desc(root.get("clockOutTime")));
+
+        List<Attendance> resultList = session.createQuery(query)
+                .setMaxResults(1)
+                .getResultList();
+
+        session.close();
+
+        if (resultList.isEmpty()) {
+            return null;
+        } else {
+            return resultList.get(0);
+        }
+    }
+
 
 }
