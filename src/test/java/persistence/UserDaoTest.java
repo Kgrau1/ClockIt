@@ -71,6 +71,14 @@ class UserDaoTest {
         assertEquals("Kevg", retrievedUser.getUsername());
     }
 
+    @Test
+    void testGetByUsernameSuccess() {
+        User retrievedUser = (User) dao.getByUsername("Kevg");
+        logger.info("Retrieved user: " + retrievedUser);
+        assertNotNull(retrievedUser);
+        assertEquals("Kevg", retrievedUser.getUsername());
+    }
+
     /**
      * Test save or update success.
      */
@@ -147,6 +155,8 @@ class UserDaoTest {
     /**
      * Test get by non existent id.
      */
+
+
     @Test
     void testGetByNonExistentId() {
         User nonExistingRecord = dao.getById(9999);

@@ -42,9 +42,8 @@ public class User {
      * @param username     the username
      * @param passwordHash the password hash
      */
-    public User(String username, String passwordHash) {
+    public User(String username) {
         this.username = username;
-        this.passwordHash = passwordHash;
     }
 
 

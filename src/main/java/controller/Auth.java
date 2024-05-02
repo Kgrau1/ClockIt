@@ -48,7 +48,6 @@ import java.util.stream.Collectors;
 @WebServlet(
         urlPatterns = {"/auth"}
 )
-// TODO if something goes wrong it this process, route to an error page. Currently, errors are only caught and logged.
 /**
  * Inspired by: https://stackoverflow.com/questions/52144721/how-to-get-access-token-using-client-credentials-using-java-code
  */
@@ -86,6 +85,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
         String userName = null;
         GenericDao<Attendance> attendanceDao = new GenericDao<>(Attendance.class);
         GenericDao<User> userDao = new GenericDao<>(User.class);
+        User currentUser = new User();
 
         if (authCode == null) {
             req.setAttribute("userNotFound", true);
@@ -96,19 +96,22 @@ public class Auth extends HttpServlet implements PropertiesLoader {
             try {
                 TokenResponse tokenResponse = getToken(authRequest);
                 userName = validate(tokenResponse);
-logger.info("Username: " + userName);
-/**
-                if (userDao.getByUsername(userName) == null) {
+
+                currentUser = userDao.getByUsername(userName);
+
+                if (currentUser == null) {
                     User newUser = new User();
                     newUser.setUsername(userName);
                     userDao.insert(newUser);
                 }
 
-                Attendance mostRecentAttendance = attendanceDao.findMostRecentAttendanceByUser(userName);
-                boolean isClockedIn = mostRecentAttendance.isClockedStatus();
+                Attendance mostRecentAttendance = attendanceDao.findMostRecentAttendanceByUser(String.valueOf(currentUser));
+                boolean isClockedIn = mostRecentAttendance != null && mostRecentAttendance.isClockedStatus();
 
-                req.setAttribute("isClockedIn", isClockedIn);**/
+                req.setAttribute("isClockedIn", isClockedIn);
                 req.setAttribute("userName", userName);
+                req.setAttribute("currentUser", currentUser);
+                req.getSession().setAttribute("currentUser", currentUser);
             } catch (IOException e) {
                 logger.error("Error getting or validating the token: " + e.getMessage(), e);
                 //TODO forward to an error page

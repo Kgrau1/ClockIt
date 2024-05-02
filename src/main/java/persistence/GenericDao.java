@@ -54,12 +54,19 @@ public class GenericDao<T> {
         return entity;
     }
 
-    public <T>T getByUsername(String username) {
+    public <T> T getByUsername(String username) {
         Session session = getSession();
-        T entity = (T)session.get(type, username);
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = (CriteriaQuery<T>) builder.createQuery(type);
+        Root<T> root = (Root<T>) query.from(type);
+
+        query.select(root).where(builder.equal(root.get("username"), username));
+
+        T entity = session.createQuery(query).uniqueResult();
         session.close();
         return entity;
     }
+
 
     /**
      * Save or update.
@@ -128,28 +135,26 @@ public class GenericDao<T> {
         return list;
     }
 
-    public Attendance findMostRecentAttendanceByUser(String userName) {
+    public <T> T findMostRecentAttendanceByUser(String userName) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Attendance> query = builder.createQuery(Attendance.class);
-        Root<Attendance> root = query.from(Attendance.class);
+        CriteriaQuery<T> query = (CriteriaQuery<T>) builder.createQuery(type);
+        Root<T> root = (Root<T>) query.from(type);
 
         query.select(root)
-                .where(builder.equal(root.get("user").get("id"), userName))
+                .where(builder.equal(root.get("user").get("username"), userName))
                 .orderBy(builder.desc(root.get("clockOutTime")));
 
-        List<Attendance> resultList = session.createQuery(query)
+        T result = session.createQuery(query)
                 .setMaxResults(1)
-                .getResultList();
+                .uniqueResult();
 
         session.close();
 
-        if (resultList.isEmpty()) {
-            return null;
-        } else {
-            return resultList.get(0);
-        }
+        return result;
     }
+
+
 
 
 }
