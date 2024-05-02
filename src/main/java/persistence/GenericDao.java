@@ -1,6 +1,7 @@
 package persistence;
 
 import entity.Attendance;
+import entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
@@ -135,14 +136,14 @@ public class GenericDao<T> {
         return list;
     }
 
-    public <T> T findMostRecentAttendanceByUser(String userName) {
+    public <T> T findMostRecentAttendanceByUser(User user) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = (CriteriaQuery<T>) builder.createQuery(type);
         Root<T> root = (Root<T>) query.from(type);
 
         query.select(root)
-                .where(builder.equal(root.get("user").get("username"), userName))
+                .where(builder.equal(root.get("user"), user))
                 .orderBy(builder.desc(root.get("clockOutTime")));
 
         T result = session.createQuery(query)
@@ -153,6 +154,9 @@ public class GenericDao<T> {
 
         return result;
     }
+
+
+
 
 
 

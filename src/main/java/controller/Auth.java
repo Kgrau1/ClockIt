@@ -105,7 +105,7 @@ public class Auth extends HttpServlet implements PropertiesLoader {
                     userDao.insert(newUser);
                 }
 
-                Attendance mostRecentAttendance = attendanceDao.findMostRecentAttendanceByUser(String.valueOf(currentUser));
+                Attendance mostRecentAttendance = attendanceDao.findMostRecentAttendanceByUser(currentUser);
                 boolean isClockedIn = mostRecentAttendance != null && mostRecentAttendance.isClockedStatus();
 
                 req.setAttribute("isClockedIn", isClockedIn);
