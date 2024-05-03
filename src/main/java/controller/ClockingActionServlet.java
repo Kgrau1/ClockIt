@@ -9,6 +9,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 @WebServlet(
         name = "ClockingActionServlet",
@@ -30,12 +31,14 @@ public class ClockingActionServlet extends HttpServlet {
         if ("Clock In".equals(action)) {
             attendance.setUser(user);
             attendance.setClockInTime(LocalDateTime.now());
+            attendance.setDate(LocalDate.now());
             attendance.setClockedStatus(true);
             attendanceDao.saveOrUpdate(attendance);
             request.setAttribute("successMessage", "Successfully clocked in");
         } else if ("Clock Out".equals(action)) {
             attendance.setUser(user);
             attendance.setClockOutTime(LocalDateTime.now());
+            attendance.setDate(LocalDate.now());
             attendance.setClockedStatus(false);
             attendanceDao.saveOrUpdate(attendance);
             request.setAttribute("successMessage", "Successfully clocked out");

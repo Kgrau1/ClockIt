@@ -9,9 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import javax.persistence.EntityNotFoundException;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
 import java.time.LocalDateTime;
 import java.util.*;
 import static persistence.SessionFactoryProvider.sessionFactory;
@@ -142,9 +140,14 @@ public class GenericDao<T> {
         CriteriaQuery<T> query = (CriteriaQuery<T>) builder.createQuery(type);
         Root<T> root = (Root<T>) query.from(type);
 
+        Subquery<Long> subquery = query.subquery(Long.class);
+        Root<T> subRoot = (Root<T>) subquery.from(type);
+        subquery.select(builder.max(subRoot.get("id")))
+                .where(builder.equal(subRoot.get("user"), user));
+
         query.select(root)
-                .where(builder.equal(root.get("user"), user))
-                .orderBy(builder.desc(root.get("clockOutTime")));
+                .where(builder.equal(root.get("id"), subquery))
+                .orderBy(builder.desc(root.get("id")));
 
         T result = session.createQuery(query)
                 .setMaxResults(1)
@@ -154,6 +157,8 @@ public class GenericDao<T> {
 
         return result;
     }
+
+
 
 
 
