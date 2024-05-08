@@ -11,6 +11,8 @@ import javax.servlet.http.*;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
+
 @WebServlet(
         name = "ClockingActionServlet",
         urlPatterns = { "/ClockingActionServlet" }
@@ -36,12 +38,13 @@ public class ClockingActionServlet extends HttpServlet {
             attendanceDao.saveOrUpdate(attendance);
             request.setAttribute("successMessage", "Successfully clocked in");
         } else if ("Clock Out".equals(action)) {
-            attendance.setUser(user);
-            attendance.setClockOutTime(LocalDateTime.now());
-            attendance.setDate(LocalDate.now());
-            attendance.setClockedStatus(false);
-            attendanceDao.saveOrUpdate(attendance);
-            request.setAttribute("successMessage", "Successfully clocked out");
+            List<Attendance> userAttendance = attendanceDao.getByPropertyEqual("user", user);
+            // Find the last attendance record for the user (assuming it's the latest clock-in)
+            Attendance latestAttendance = userAttendance.get(userAttendance.size() - 1);
+            // Update the clock-out time for the latest attendance record
+            latestAttendance.setClockOutTime(LocalDateTime.now());
+            latestAttendance.setClockedStatus(false);
+            attendanceDao.saveOrUpdate(latestAttendance);
         }
 
         response.sendRedirect("index.jsp");
