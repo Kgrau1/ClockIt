@@ -53,6 +53,13 @@ public class GenericDao<T> {
         return entity;
     }
 
+    /**
+     * Gets by username.
+     *
+     * @param <T>      the type parameter
+     * @param username the username
+     * @return the by username
+     */
     public <T> T getByUsername(String username) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -123,6 +130,13 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Gets by property equal.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property equal
+     */
     public List<T> getByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -134,6 +148,13 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Find most recent attendance by user t.
+     *
+     * @param <T>  the type parameter
+     * @param user the user
+     * @return the t
+     */
     public <T> T findMostRecentAttendanceByUser(User user) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

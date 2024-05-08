@@ -35,17 +35,14 @@ public class User {
     public User() {
     }
 
-
     /**
      * Instantiates a new User.
      *
      * @param username     the username
-     * @param passwordHash the password hash
      */
     public User(String username) {
         this.username = username;
     }
-
 
     /**
      * Sets id.
